@@ -1,0 +1,18 @@
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    #courses .card {
+      margin: 0 auto; /* Center the card horizontally */
+      width: 100%; /* Make the card take full width in small screens */
+      max-width: 300px; /* Set a max-width so it doesn't become too wide */
+    }
+  
+    #courses .card-body {
+      text-align: center; /* Center the content inside the card */
+    }
+  
+    #courses .card-img-top {
+      max-height: 200px; /* Set a maximum height for the image to make it responsive */
+      object-fit: cover; /* Make sure the image covers the card space nicely */
+    }
+  }
+  

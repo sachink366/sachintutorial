@@ -1,0 +1,45 @@
+/* src/components/AboutSection.css */
+
+.animated-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; /* Space below the animated text */
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* To hide overflow during zoom */
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    animation: zoom 4s ease-in-out infinite; /* Apply zoom animation */
+  }
+  
+  /* Keyframes for zoom effect */
+  @keyframes zoom {
+    0% {
+      transform: scale(1); /* Original size */
+    }
+    50% {
+      transform: scale(1.1); /* Zoom in */
+    }
+    100% {
+      transform: scale(1); /* Back to original size */
+    }
+  }
+  
+  /* Additional spacing for title, animated text, and description */
+  h2 {
+    margin-bottom: 30px; /* Space below the heading */
+  }
+  
+  p {
+    margin-top: 30px; /* Space above the description text */
+    line-height: 1.6; /* Optional: Increase line spacing for readability */
+  }
+  
